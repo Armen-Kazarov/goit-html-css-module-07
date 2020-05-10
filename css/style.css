@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+button, input {
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+/* dancing-script-regular - latin */
+@font-face {
+    font-family: "Dancing Script";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Dancing Script"), local("Dancing Script"),
+    url("../fonts/dancing-script-v14-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/dancing-script-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* noto-serif-regular - latin */
+@font-face {
+    font-family: "Noto Serif";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Noto Serif"), local("NotoSerif"),
+    url("../fonts/noto-serif-v8-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/noto-serif-v8-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* noto-serif-italic - latin */
+@font-face {
+    font-family: "Noto Serif";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Noto Serif Italic"), local("NotoSerif-Italic"),
+    url("../fonts/noto-serif-v8-latin-italic.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/noto-serif-v8-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto Slab"),
+    url("../fonts/roboto-slab-v11-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/roboto-slab-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+    --logo-font: 400 26px/41px "Dancing Script", sans-serif;
+    --header-nav-menu-font: 400 14px/41px "Montserrat", sans-serif;
+    --title-subtitle-form-font-family-weight: 700 "Montserrat", sans-serif;
+    --description-section-font: 400 italic 16px/1.2 "Noto Serif", sans-serif;
+    --golden-color: #fed136;
+    --secondary-color: #222;
+    --description-section-color: #777;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.logo {
+    font: var(--logo-font);
+    letter-spacing: 0.05em;
+    color: var(--golden-color);
+}
+
+.header-nav-menu {
+    justify-content: space-between;
+    align-items: center;
+    min-height: 72px;
+}
+
+.header-nav-menu-list-item + .header-nav-menu-list-item {
+    margin-left: 40px;
+}
+
+.header-nav-menu-link {
+    font: var(--header-nav-menu-font);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.header-nav-menu-link:hover {
+    color: var(--golden-color);
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.main-container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.section-services {
+    padding-top: 76px;
+    padding-bottom: 122px;
+}
+
+.section-title {
+    text-align: center;
+    font-family: var(--title-subtitle-form-font-family-weight);
+    font-size: 40px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: var( --secondary-color);
+    letter-spacing: -0.025em;
+}
+
+.section-description {
+    font: var(--description-section-font);
+    color: var(--description-section-color);
+    text-align: center;
+}
+
+
+
