@@ -12,7 +12,7 @@ img {
     height: auto;
 }
 
-button, input {
+button, input, textarea {
     padding: 0;
     border: none;
     outline: none;
@@ -83,7 +83,8 @@ textarea {
 :root {
     --logo-font: 400 26px/41px "Dancing Script", sans-serif;
     --header-nav-menu-font: 400 14px/41px "Montserrat", sans-serif;
-    --title-subtitle-form-font-family-weight: 700 "Montserrat", sans-serif;
+    --title-subtitle-form-font-family: "Montserrat", sans-serif;
+    --title-subtitle-form-font-weight: 700;
     --description-section-font: 400 italic 16px/1.2 "Noto Serif", sans-serif;
     --golden-color: #fed136;
     --secondary-color: #222;
@@ -131,11 +132,6 @@ textarea {
     transition-timing-function: linear;
 }
 
-.main-container {
-    max-width: 940px;
-    margin: 0 auto;
-}
-
 .section-services {
     padding-top: 76px;
     padding-bottom: 122px;
@@ -143,7 +139,8 @@ textarea {
 
 .section-title {
     text-align: center;
-    font-family: var(--title-subtitle-form-font-family-weight);
+    font-family: var(--title-subtitle-form-font-family);
+    font-weight: var(--title-subtitle-form-font-weight);
     font-size: 40px;
     line-height: 75px;
     text-transform: uppercase;
@@ -157,5 +154,135 @@ textarea {
     text-align: center;
 }
 
+.services-list-items {
+    justify-content: space-between;
+    margin-top: 80px;
+}
 
+.services-list-item {
+    text-align: center;
+}
 
+.subtitles-services-section-list-items {
+    font-family: var(--title-subtitle-form-font-family);
+    font-weight: var(--title-subtitle-form-font-weight);
+    font-size: 18px;
+    line-height: 75px;
+    color: var( --secondary-color);
+    text-transform: capitalize;
+    letter-spacing: -0.025em;
+}
+
+.services-list-item::before {
+      content: "";
+      display: block;
+      border: solid 3px var(--golden-color);
+      border-radius: 50%;
+      width: 72px;
+      height: 72px;
+      margin: 0 auto;
+  }
+
+.services-list-item:first-child::before {
+    background: url("../img/icons/icon-basket.png") no-repeat center;
+}
+
+.services-list-item:nth-child(2)::before {
+    background: url("../img/icons/icon-laptop.png") no-repeat center;
+}
+
+.services-list-item:nth-child(3)::before {
+    background: url("../img/icons/icon-locked.png") no-repeat center;
+}
+
+.services-list-item-text-info {
+    font: 400 14px/20px "Roboto Slab", sans-serif;
+    color: var(--description-section-color);
+    letter-spacing: -0.025em;
+}
+
+.section-contact-us {
+    background: var(--secondary-color) url("../img/map-image.png") no-repeat right bottom 20px;
+    padding-top: 106px;
+    padding-bottom: 114px;
+}
+
+.services-section-title {
+    color: #fff;
+}
+
+.form-of-contact {
+    margin-top: 76px;
+}
+
+.inputs-form {
+    justify-content: space-between;
+}
+
+.list-form-inputs {
+    width: 454px;
+}
+
+.list-form-input + .list-form-input {
+    margin-top: 26px;
+}
+
+.list-form-input input {
+    width: 100%;
+    border: solid 2px #ccc;
+    border-radius: 2px;
+    padding: 20px;
+}
+
+.list-form-input input:focus:valid {
+    border-color: #008000;
+}
+
+.list-form-input input:focus:invalid {
+    border-color: #ff0000;
+}
+
+.set-message {
+    width: 454px;
+}
+
+.set-message textarea {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    border: solid 2px #ccc;
+    border-radius: 2px;
+}
+
+.set-message textarea:focus:valid {
+    border-color: #008000;
+}
+
+.set-message textarea:focus:invalid {
+    border-color: #ff0000;
+}
+
+::placeholder {
+    font-family: var(--title-subtitle-form-font-family);
+    font-weight: var(--title-subtitle-form-font-weight);
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: -0.025em;
+    color: #bbb;
+}
+
+.form-btn {
+    display: block;
+    margin: 28px auto 0;
+    text-transform: uppercase;
+    font-family: var( --title-subtitle-form-font-family);
+    font-weight: var(--title-subtitle-form-font-weight);
+    font-size: 18PX;
+    line-height: 1.2;
+    color: #fff;
+    background-color: var(--golden-color);
+    padding: 24px 46px;
+    border-radius: 2px;
+    cursor: pointer;
+}
