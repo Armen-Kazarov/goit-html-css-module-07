@@ -181,18 +181,18 @@ textarea {
       width: 72px;
       height: 72px;
       margin: 0 auto;
-  }
+}
 
 .services-list-item:first-child::before {
-    background: url("../img/icons/icon-basket.png") no-repeat center;
+    background: url("../img/icons/basket.png") no-repeat center;
 }
 
 .services-list-item:nth-child(2)::before {
-    background: url("../img/icons/icon-laptop.png") no-repeat center;
+    background: url("../img/icons/laptop.png") no-repeat center;
 }
 
 .services-list-item:nth-child(3)::before {
-    background: url("../img/icons/icon-locked.png") no-repeat center;
+    background: url("../img/icons/locked.png") no-repeat center;
 }
 
 .services-list-item-text-info {
