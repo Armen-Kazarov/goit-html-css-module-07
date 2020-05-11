@@ -192,7 +192,9 @@ textarea {
 }
 
 .services-list-item:nth-child(3)::before {
-    background: url("../img/icons/locked.png") no-repeat center;
+    background-image: url("../img/icons/locked.png");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .services-list-item-text-info {
