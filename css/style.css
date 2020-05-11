@@ -227,18 +227,19 @@ textarea {
     margin-top: 26px;
 }
 
-.list-form-input input {
+.contact-form-input,
+.contact-form-message {
     width: 100%;
     border: solid 2px #ccc;
     border-radius: 2px;
     padding: 20px;
 }
 
-.list-form-input input:focus:valid {
+.contact-form-input:focus:valid {
     border-color: #008000;
 }
 
-.list-form-input input:focus:invalid {
+.contact-form-input:focus:invalid:not(:placeholder-shown) {
     border-color: #ff0000;
 }
 
@@ -246,23 +247,20 @@ textarea {
     width: 454px;
 }
 
-.set-message textarea {
-    padding: 20px;
-    width: 100%;
+.contact-form-message {
     height: 100%;
-    border: solid 2px #ccc;
-    border-radius: 2px;
 }
 
-.set-message textarea:focus:valid {
+.contact-form-message:focus:valid {
     border-color: #008000;
 }
 
-.set-message textarea:focus:invalid {
+.contact-form-message:focus:invalid:not(:placeholder-shown) {
     border-color: #ff0000;
 }
 
-::placeholder {
+.contact-form-input::placeholder,
+.contact-form-message::placeholder {
     font-family: var(--title-subtitle-form-font-family);
     font-weight: var(--title-subtitle-form-font-weight);
     font-size: 14px;
