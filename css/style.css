@@ -240,6 +240,10 @@ textarea {
 }
 
 .contact-form-input:focus:invalid:not(:placeholder-shown) {
+    border-color: var(--golden-color);
+}
+
+.contact-form-input:invalid:not(:focus):not(:placeholder-shown) {
     border-color: #ff0000;
 }
 
@@ -256,6 +260,10 @@ textarea {
 }
 
 .contact-form-message:focus:invalid:not(:placeholder-shown) {
+    border-color: var(--golden-color);
+}
+
+.contact-form-message:invalid:not(:focus):not(:placeholder-shown) {
     border-color: #ff0000;
 }
 
